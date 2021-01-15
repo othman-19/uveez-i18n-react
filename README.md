@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# PROJECT: μveez 
+## The movie magazine app 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+μveez is a single-page and multilanguage movie magazine app, built with React & Redux.
 
-## Available Scripts
+it contains two i18n-ized React / Redux SPAs: an admin backend and a front-facing app, with many of the react i18n and l10n bells and whistles that production apps would need.
 
-In the project directory, you can run:
+![screenshot](./bookstore.png)
 
-### `yarn start`
+> This project is a tutorial to learn about React and I18n from  [Phraze](https://phrase.com/blog/posts/react-i18n-app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Live Demo Link](). Not yet
 
-### `yarn test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Our entire framework (with versions at time of writing) can, then, look like this.
 
-### `yarn build`
+- React (16.8)
+- Redux (4.0)
+- React Redux (6.0)
+- Redux Thunk (2.3) —for asynchronous redux actions
+- React Router DOM (5.0) —for browser routing
+- i18next (15.0) —for i18n-ized UI
+- Bootstrap (4.3)
+- Bootstrap4-rtl (4.0) —for right-to-left CSS layout
+- Reactstrap (8.0) —for Bootstrap React components
+- Lodash (4.17) —for JavaScript utilities
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### General
+- μveez will initially support Arabic, English, and French.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Admin
+- Film director index with names in supported locales.
+- Adding a director with translations in supported locales.
+- Movie index with titles in supported locales.
+- Adding a movie with translated titles and synopses in supported locales.
 
-### `yarn eject`
+### Front
+- Language switching between our supported locales, covering RTL directionality for Arabic.
+- Home page with featured directors, quote of the day, and featured movies.
+- Movie index.
+- Single (show) movie.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get a local copy up and running follow these simple example steps.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Git.
+2. Code editor.
+3. Code linter.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to run the program
 
-## Learn More
+1. Open the terminal.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Enter `git clone git@github.com:othman-19/uveez-i18n-react.git`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Navigate to the cloned repository.
 
-### Code Splitting
+4. In the terminal cd into uveez-i18n-react.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Run `npm install` in your terminal.
 
-### Analyzing the Bundle Size
+6. Run `npm run start` in your termianl.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Making a Progressive Web App
+## Author(s)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Othamane Naamani](https://github.com/othman-19/).
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Othmane Namani](https://github.com/othman-19/)  
+[Email: othmanenaamani@gmail.com](mailto:othmanenaamani@gmail.com)  
+[Portfolio](https://othman-19.github.io/my_portfolio/)  
+[LinkedIn](https://www.linkedin.com/in/othman-namani/)  
+[Twitter](https://twitter.com/ONaamani)  
+[DEV Community](https://dev.to/othman)  
+[Angel List](https://angel.co/othmane-namani)  
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `yarn build` fails to minify
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
