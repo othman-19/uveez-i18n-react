@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export const addDirectors = directors => ({
   type: 'ADD_DIRECTORS',
   directors,
@@ -9,3 +10,10 @@ export const fetchDirectors = () => dispatch => (
     .then(directors => dispatch(addDirectors(directors)))
     .catch(err => console.error(err))
 );
+
+export const setNewDirector = ({ name_ar, name_en, name_fr }) => ({
+  type: 'SET_NEW_DIRECTOR_NAME',
+  name_ar,
+  name_en,
+  name_fr,
+});
