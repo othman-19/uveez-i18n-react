@@ -32,6 +32,27 @@ export default (state = INITIAL_STATE, action) => {
           name_fr: defaultOnUndefinedOrNull(action.name_fr, state.newDirector.name_fr),
         },
       };
+    case 'ADD_DIRECTOR':
+      lastId = state.lastId + 1;
+      directors = [
+        ...state.directors,
+        {
+          id: lastId,
+          name_ar: action.name_ar,
+          name_en: action.name_en,
+          name_fr: action.name_fr,
+        },
+      ];
+      return {
+        ...state,
+        lastId,
+        directors,
+        newDirector: {
+          name_ar: '',
+          name_en: '',
+          name_fr: '',
+        },
+      };
     default:
       return state;
   }
