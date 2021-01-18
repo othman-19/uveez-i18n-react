@@ -23,4 +23,4 @@ export const addDirector = ({ name_ar, name_en, name_fr }) => ({
   name_ar,
   name_en,
   name_fr,
-})
+});
