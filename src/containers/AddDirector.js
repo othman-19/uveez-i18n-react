@@ -10,13 +10,25 @@ import {
   CardBody,
   CardTitle,
 } from 'reactstrap';
-import { setNewDirector } from '../actions';
+import { addDirector, setNewDirector } from '../actions';
 import AddDirectorTranslation from '../components/AddDirectorTranslation';
 
 class AddDirector extends Component {
   _updateTranslation(key, value) {
     const { setNewDirector } = this.props;
     setNewDirector({ [key]: value });
+  }
+
+  _addDirector() {
+    const {
+      name_ar,
+      name_en,
+      name_fr,
+      addDirector,
+    } = this.props;
+    if (name_ar && name_en && name_fr) {
+      addDirector({ name_ar, name_en, name_fr });
+    }
   }
 
   render() {
@@ -51,7 +63,7 @@ class AddDirector extends Component {
               value={name_fr}
               onChange={value => this._updateTranslation('name_fr', value)}
             />
-            <Button>Add</Button>
+            <Button onClick={() => this._addDirector()}>Add</Button>
           </Form>
         </CardBody>
       </Card>
@@ -66,5 +78,6 @@ export default connect(
   },
   {
     setNewDirector,
+    addDirector,
   },
 )(AddDirector);

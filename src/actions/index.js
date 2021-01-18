@@ -17,3 +17,10 @@ export const setNewDirector = ({ name_ar, name_en, name_fr }) => ({
   name_en,
   name_fr,
 });
+
+export const addDirector = ({ name_ar, name_en, name_fr }) => ({
+  type: 'ADD_DIRECTOR',
+  name_ar,
+  name_en,
+  name_fr,
+})
