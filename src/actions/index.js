@@ -52,3 +52,8 @@ export const setIsFeatured = isFeatured => ({
   type: 'SET_IS_FEATURED',
   isFeatured,
 });
+
+export const setPublishedOn = publishedOn => ({
+  type: 'SET_PUBLISHED_ON',
+  publishedOn,
+});
