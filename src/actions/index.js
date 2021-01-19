@@ -1,4 +1,7 @@
 /* eslint-disable camelcase */
+
+import _ from 'lodash';
+
 export const addDirectors = directors => ({
   type: 'ADD_DIRECTORS',
   directors,
@@ -36,3 +39,11 @@ export const fetchMovies = () => dispatch => (
     .then(movies => dispatch(addMovies(movies)))
     .catch(err => console.log(err))
 );
+
+export const selectDirector = id => (dispatch, getState) => {
+  dispatch({
+    type: 'SELECT_DIRECTOR',
+    id,
+    name: _.find(getState().directors.directors, { id: parseInt(id, 10) }).name_en,
+  });
+};
