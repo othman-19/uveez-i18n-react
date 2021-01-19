@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import AppNavbar from 'AppNavbar';
+import AppFooter from 'AppFooter';
 import routes from '../routes';
-import AppNavbar from '../components/AppNavbar';
-import AppFooter from '../components/AppFooter';
 
 const App = () => (
   <div style={{ paddingTop: '80px' }}>
