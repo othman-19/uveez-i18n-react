@@ -24,3 +24,15 @@ export const addDirector = ({ name_ar, name_en, name_fr }) => ({
   name_en,
   name_fr,
 });
+
+export const addMovies = movies => ({
+  type: 'ADD_MOVIES',
+  movies,
+});
+
+export const fetchMovies = () => dispatch => (
+  fetch('/api/movies.json')
+    .then(response => response.json())
+    .then(movies => dispatch(addMovies(movies)))
+    .catch(err => console.log(err))
+);
