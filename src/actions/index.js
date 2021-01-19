@@ -57,3 +57,13 @@ export const setPublishedOn = publishedOn => ({
   type: 'SET_PUBLISHED_ON',
   publishedOn,
 });
+
+export const setNewMovieTranslation = (translation, locale) => ({
+  type: 'SET_NEW_MOVIE_TRANSLATION',
+  translation,
+  locale,
+});
+
+export const addMovie = () => ({
+  type: 'ADD_MOVIE',
+});
