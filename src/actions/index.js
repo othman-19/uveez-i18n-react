@@ -47,3 +47,8 @@ export const selectDirector = id => (dispatch, getState) => {
     name: _.find(getState().directors.directors, { id: parseInt(id, 10) }).name_en,
   });
 };
+
+export const setIsFeatured = isFeatured => ({
+  type: 'SET_IS_FEATURED',
+  isFeatured,
+});
