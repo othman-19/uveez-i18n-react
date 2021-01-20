@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { defaultOnUndefinedOrNull } from '../services/util';
+import defaultOnUndefinedOrNull from '../services/util';
 
 const INITIAL_STATE = {
   lastId: 0,
