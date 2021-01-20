@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-import AppNavbar from 'AppNavbar';
-import AppFooter from 'AppFooter';
+import AppNavbar from './AppNavbar';
+import AppFooter from './AppFooter';
 import routes from '../routes';
 
 const App = () => (
