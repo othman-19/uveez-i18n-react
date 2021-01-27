@@ -19,7 +19,7 @@ export const setUiLocale = locale => fetch(`/translations/${locale}.json`)
             return value;
           },
         },
-      }, (err, t) => {
+      }, err => {
         if (err) {
           reject(err);
           return;
