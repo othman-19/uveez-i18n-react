@@ -3,7 +3,7 @@ const INITIAL_STATE = {
   featured: [],
 };
 
-export default (state = INITIAL_STATE, action) => {
+const Directors = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'ADD_DIRECTORS':
       return {
@@ -16,3 +16,5 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default Directors;
