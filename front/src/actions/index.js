@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 export const changeLocale = locale => ({
   type: 'CHANGE_LOCALE',
   locale,
@@ -36,6 +37,11 @@ export const setCurrentMovie = id => ({
   id,
 });
 
+export const addDirectors = directors => ({
+  type: 'ADD_DIRECTORS',
+  directors,
+});
+
 export const fetchDirectors = () => (dispatch, getState) => {
   const { locale } = getState().l10n;
 
@@ -44,11 +50,6 @@ export const fetchDirectors = () => (dispatch, getState) => {
     .then(directors => dispatch(addDirectors(directors)))
     .catch(err => console.error(err));
 };
-
-export const addDirectors = directors => ({
-  type: 'ADD_DIRECTORS',
-  directors,
-});
 
 export const fetchQuote = () => (dispatch, getState) => {
   const { locale } = getState().l10n;
