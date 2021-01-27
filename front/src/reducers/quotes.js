@@ -7,7 +7,7 @@ const INITIAL_STATE = {
   },
 };
 
-export default (state = INITIAL_STATE, action) => {
+const Quotes = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'ADD_QUOTE':
       return {
@@ -19,3 +19,5 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default Quotes;

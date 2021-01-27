@@ -5,7 +5,7 @@ const INITIAL_STATE = {
   uiTranslationsLoaded: false,
 };
 
-export default (state = INITIAL_STATE, action) => {
+const L10n = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'CHANGE_LOCALE':
       return {
@@ -29,3 +29,4 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+export default L10n;
