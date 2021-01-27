@@ -13,6 +13,11 @@ export const setUiTranslationsLoaded = isLoaded => ({
   isLoaded,
 });
 
+export const addMovies = movies => ({
+  type: 'ADD_MOVIES',
+  movies,
+});
+
 export const fetchMovies = () => (dispatch, getState) => {
   const { locale } = getState().l10n;
 
@@ -22,20 +27,15 @@ export const fetchMovies = () => (dispatch, getState) => {
     .catch(err => console.error(err));
 };
 
-export const addMovies = movies => ({
-  type: 'ADD_MOVIES',
-  movies,
+export const setCurrentMovie = id => ({
+  type: 'SET_CURRENT_MOVIE',
+  id,
 });
 
 export const findMovie = id => (dispatch, getState) => {
   dispatch(fetchMovies())
     .then(() => dispatch(setCurrentMovie(id)));
 };
-
-export const setCurrentMovie = id => ({
-  type: 'SET_CURRENT_MOVIE',
-  id,
-});
 
 export const addDirectors = directors => ({
   type: 'ADD_DIRECTORS',
@@ -51,6 +51,11 @@ export const fetchDirectors = () => (dispatch, getState) => {
     .catch(err => console.error(err));
 };
 
+export const addQuote = quote => ({
+  type: 'ADD_QUOTE',
+  quote,
+});
+
 export const fetchQuote = () => (dispatch, getState) => {
   const { locale } = getState().l10n;
 
@@ -59,8 +64,3 @@ export const fetchQuote = () => (dispatch, getState) => {
     .then(quote => dispatch(addQuote(quote)))
     .catch(err => console.error(err));
 };
-
-export const addQuote = quote => ({
-  type: 'ADD_QUOTE',
-  quote,
-});
