@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import {
-  Card, CardImg, CardBody, CardText,
+  Card,
+  CardImg,
+  CardBody,
+  CardText,
 } from 'reactstrap';
 
 import { t } from '../services/i18n';
