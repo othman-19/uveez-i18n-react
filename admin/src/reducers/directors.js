@@ -11,7 +11,7 @@ const INITIAL_STATE = {
   },
 };
 
-export default (state = INITIAL_STATE, action) => {
+const directors = (state = INITIAL_STATE, action) => {
   let directors = [];
   let lastId;
   switch (action.type) {
@@ -57,3 +57,5 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default directors;
