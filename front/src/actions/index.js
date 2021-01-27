@@ -32,7 +32,7 @@ export const setCurrentMovie = id => ({
   id,
 });
 
-export const findMovie = id => (dispatch, getState) => {
+export const findMovie = id => dispatch => {
   dispatch(fetchMovies())
     .then(() => dispatch(setCurrentMovie(id)));
 };
