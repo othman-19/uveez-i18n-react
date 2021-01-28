@@ -5,13 +5,25 @@
 
 it contains two i18n-ized React / Redux SPAs: an admin backend and a front-facing app, with many of the react i18n and l10n bells and whistles that production apps would need.
 
-![screenshot](./bookstore.png)
+## Front-facing app
+
+![screenshot arabic](./screenshots/front-ar.png)
+![screenshot english](./screenshots/front-en.png)
+![screenshot french](./screenshots/front-fr.png)
+
+
+
+## Admin-panel app
+
+![screenshot](./screenshots/admin.png)
 
 > This project is a tutorial to learn about React and I18n from  [Phraze](https://phrase.com/blog/posts/react-i18n-app/).
 
-## Live Demo
+## Live Demos
 
-[Live Demo Link](). Not yet
+[Front-facing app](https://mini-uveez.netlify.app/).
+
+[Admin-panel app](https://admin-panel-uveez.netlify.app/).
 
 ## Built With
 
