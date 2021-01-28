@@ -73,7 +73,7 @@ To get a local copy up and running follow these simple example steps.
 
 3. Navigate to the cloned repository.
 
-4. In the terminal cd into uveez-i18n-react.
+4. In the terminal cd into uveez-i18n-react/front or uveez-i18n-react/admin.
 
 5. Run `npm install` in your terminal.
 
@@ -83,7 +83,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author(s)
 
-[Othamane Naamani](https://github.com/othman-19/).
+[Othamane Namani](https://github.com/othman-19/).
 
 ## Contact
 
